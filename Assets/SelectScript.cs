@@ -12,9 +12,9 @@ public class SelectScript : MonoBehaviour
     public InputField input2;
     public InputField input3;
 
-    public Text toDo1;
-    public Text toDo2;
-    public Text toDo3;
+    public Text toDo1 = null;
+    public Text toDo2 = null;
+    public Text toDo3 = null;
 
     string TODO1 = null;
     string TODO2 = null;
@@ -99,10 +99,6 @@ public class SelectScript : MonoBehaviour
         TODO3 = toDo3.ToString();
 
         toDo = new string[] { TODO1, TODO2, TODO3 };
-        /*Debug.Log(TODO1);
-        Debug.Log(TODO2);
-        Debug.Log(TODO3);*/
-
     }
 
     public void OnStart()
