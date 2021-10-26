@@ -16,9 +16,9 @@ public class SelectScript : MonoBehaviour
     public Text toDo2 = null;
     public Text toDo3 = null;
 
-    string TODO1 = null;
-    string TODO2 = null;
-    string TODO3 = null;
+    public static string TODO1 = null;
+    public static string TODO2 = null;
+    public static string TODO3 = null;
 
     public GameObject inputField1;
     public GameObject inputField2;
@@ -54,7 +54,7 @@ public class SelectScript : MonoBehaviour
 
     public void OnClick1()
     {
-        time = 900.0f; //15分は900秒
+        time = 5.0f; //15分は900秒
         Debug.Log(time);
         SetText();
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class TimerScript : MonoBehaviour
         }*/
         SelectScript.time -= Time.deltaTime;
         timerLabel.text = SelectScript.time.ToString("f1");
+        if(SelectScript.time < 0)
+        {
+            SceneManager.LoadScene("Game");
+        }
 
         /*if (minute < 60)
         {
