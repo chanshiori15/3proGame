@@ -40,7 +40,7 @@ public class Game1_main : MonoBehaviour
     public GameObject Panel_7;
     public GameObject Panel_8;
     public GameObject Panel_9;*/
-    private string[] _test_1 = { "アメリカ\r\nクロクマ", "アフリカ/r/nスイギュウ", "ジャイアント/r/nパンダ", "ワニ", "ニホンカ/r/nモシカ", "ユーラシア/r/nカワウソ", "アフリカ/r/nゾウ", "ハリネズミ",SelectScript.TODO1 };//8個の要素
+    private string[] _test_1 = { "アメリカ\r\nクロクマ", "アフリカ\r\nスイギュウ", "ジャイアント\r\nパンダ", "ワニ", "ニホンカ\r\nモシカ", "ユーラシア\r\nカワウソ", "アフリカ\r\nゾウ", "ハリネズミ",SelectScript.TODO1 };//8個の要素
     private string[] _test_2 = { "むらさき", "ももいろ", "はいいろ", "あおいろ", "きいろ", "みどりいろ", "くろいろ", "しろいろ", SelectScript.TODO2 };
     private int[] randomNum = new int[9];
     private string[] randomTodo;

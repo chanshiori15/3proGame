@@ -36,6 +36,12 @@ public class SelectScript : MonoBehaviour
     void Start()
     {
         MainText.text = "何分後に\nお知らせしますか？";
+        DontDestroyOnLoad(this.toDo1);
+        DontDestroyOnLoad(this.toDo2);
+        DontDestroyOnLoad(this.toDo3);
+        DontDestroyOnLoad(this.inputField1);
+        DontDestroyOnLoad(this.inputField2);
+        DontDestroyOnLoad(this.inputField3);
     }
 
     // Update is called once per frame
@@ -94,9 +100,9 @@ public class SelectScript : MonoBehaviour
         toDo2.text = input2.text;
         toDo3.text = input3.text;
 
-        TODO1 = toDo1.ToString();
-        TODO2 = toDo2.ToString();
-        TODO3 = toDo3.ToString();
+        TODO1 = toDo1.text;
+        TODO2 = toDo2.text;
+        TODO3 = toDo3.text;
 
         toDo = new string[] { TODO1, TODO2, TODO3 };
     }
